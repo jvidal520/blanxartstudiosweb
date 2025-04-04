@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/login.css">
+    <link rel="icon" href="imagesandicons/logotip.png">
+    <title>Inici de Sessió</title>
+</head>
+<body>
+    <div class="login-container">
+        <p class="button-back"><a href="index.html">
+            <img src="imagesandicons/return.png" alt="...">
+        </a></p>
+        <div class="login-header">Inici de sessió</div>
+        <form class="login-form" action="index.html">
+            <input type="email" placeholder="Correu electrònic" required>
+            <div style="position: relative;">
+                <input type="password" id="password" placeholder="Contrasenya" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <img id="toggle-icon" src="imagesandicons/eye-slash.svg" alt="ocultar">
+                </span>
+            </div>
+            <button type="submit" class="button-login">Iniciar sessió</button>
+        </form>
+        <p class="register-text">Si no estàs registrat fes click <a href="singup.html">aquí</a></p>
+    </div>
+    <script src="JavaScript/funciones.js"></script>
+</body>
+</html>

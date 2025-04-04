@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #505050;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.requadre-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    transition: 0.8s;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+.llista {
+    margin-left: 180px; 
+}
+
+.llista ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.llista ul li {
+    margin-right: 15px;
+}
+
+.llista ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.llista ul li a.Noticies {
+    background-color: black;
+    color: white;
+}
+
+.llista ul li a:hover, .login:hover {
+    background-color: #555;
+    color: white;
+}
+
+.login a {
+    background-color: black;
+    text-decoration: none;
+    margin: 5px;
+    margin-left: -8px;
+    margin-right: -8px;
+    transition: 0.8s;
+    transition: background 0.6s;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login a:hover {
+    text-decoration: underline;
+    color: #444;
+    background-color: #ccc;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 250px;
+    background: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-placeholder {
+    max-width: 100%;
+    background: #d3d3d3;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1 {
+    max-width: 80%;
+    margin: 50px;
+}
+
+/*Inici de framework*/
+button .button-framework {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+  
+button .button-framework:active, button .button-framework:hover {
+    outline: 0;
+}
+  
+button .button-framework span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+  
+button .button-framework:hover span {
+    background: none;
+}
+  
+button .button-framework:active {
+    transform: scale(0.9);
+}
+/*Fi de framework*/  
+
+.image2 {
+    max-width: 100%;
+    margin: 50px;
+}
+
+.image3 {
+    max-width:40%;
+    margin: 50px;
+}
+
+.title {
+    color: black;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: large;
+}
+
+.text {
+    text-align: justify;
+    height: 60px;
+    margin-bottom: 10px;
+    font-size: smaller;
+}
+
+.read-more {
+    color: #555;
+    text-decoration: none;
+}
+
+.footer {
+    background: #f4f4f4;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-footer {
+    text-align: start;
+}
+
+.container-footer1 {
+    text-align: end;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container-footer2 {
+    text-align: end;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container-footer3 {
+    text-align: end;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container-footer4 a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container-footer4 a:hover {
+    text-decoration: underline;
+}
+
+.button-back {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.5s, transform 0.3s;
+    cursor: pointer;
+}
+
+.button-back:hover {
+    background-color: #aaa;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* Resposive desing */
+@media (max-width: 768px) {
+
+    /* Responsive design de header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+    }
+
+    .requadre-superior {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -80px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .logo a {
+        font-size: 30px;
+    }
+
+    .llista {
+        margin-left: 0;
+    }
+
+    .llista ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -20px;
+    }
+
+    .llista ul li {
+        margin: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .llista ul li a {
+        margin: 5px;
+    }
+    
+    .login {
+        margin: 10px;
+        padding: 0;
+    }
+
+    .login a {
+        margin: 5px;
+    }
+}
+
+/* Responsive design de main i footer */
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .image-placeholder {
+        height: 150px;
+    }
+
+    .title {
+        font-size: medium;
+    }
+
+    .text {
+        height: 40%;
+    }
+
+    /* Responsive design de contenido del main*/
+    .container {
+        flex-direction: column;
+    }
+
+    .content {
+        margin: 0 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .image-placeholder {
+        height: 200px;
+    }
+
+    .ads {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .container-footer {
+        text-align: center;
+    }
+
+    .container-footer1 {
+        text-align: center;
+    }
+
+    .container-footer1 a {
+        margin: 5px;
+    }
+
+    .container-footer2 {
+        text-align: center;
+    }
+
+    .container-footer2 a {
+        margin: 5px;
+    }
+
+    .container-footer3 {
+        text-align: center;
+    }
+
+    .container-footer3 a {
+        margin: 5px;
+    }
+
+    .container-footer4 {
+        text-align: center;
+    }
+
+    .container-footer4 a {
+        margin: 5px;
+    }
+
+    .button-back {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}

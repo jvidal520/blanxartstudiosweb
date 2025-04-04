@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/singup.css">
+    <link rel="icon" href="imagesandicons/logotip.png">
+    <title>signup</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Registre</h2>
+        <input type="text" placeholder="Nom*" required>
+        <input type="text" placeholder="Cognom*" required>
+        <input type="email" placeholder="Correu electrònic*" required>
+        <input type="password" id="password" placeholder="Contrasenya*" required>
+        <div id="password-error" class="error-message"></div>
+        <input type="password" placeholder="Repeteix la contrasenya*" required>
+        <input type="date">
+        <div class="checkbox-container">
+            <input type="checkbox"> <span>Acceptar les polítiques de privacitat</span>
+        </div>
+        <p>o iniciar sessió amb :</p>
+        <div class="social-icons">
+            <div class="google-icon"><img src="imagesandicons/google.svg" alt="Google"></div>
+            <div class="microsoft-icon"><img src="imagesandicons/microsoft.svg" alt="Microsoft"></div>
+            <div class="apple-icon"><img src="imagesandicons/apple.svg" alt="Apple"></div>
+        </div>
+        <button class="button-singup" onclick="return validatePassword()"><a href="index.html">Registrar-se ja</a></button>
+    </div>
+    <script src="JavaScript/funciones.js"></script>
+</body>
+</html>

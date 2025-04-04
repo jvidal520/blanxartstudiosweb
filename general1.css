@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #505050;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.requadre-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    transition: 0.8s;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+.llista {
+    margin-left: 180px; 
+}
+
+.llista ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.llista ul li {
+    margin-right: 15px;
+}
+
+.llista ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.llista ul li a.General {
+    background-color: black;
+    color: white;
+}
+
+.llista ul li a:hover, .login:hover {
+    background-color: #555;
+    color: white;
+}
+
+.login a {
+    background-color: black;
+    text-decoration: none;
+    margin: 5px;
+    margin-left: -8px;
+    margin-right: -8px;
+    transition: 0.8s;
+    transition: background 0.6s;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login a:hover {
+    text-decoration: underline;
+    color: #444;
+    background-color: #ccc;
+}
+
+.main {
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.requadre-esquerra, .requadre-dreta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    flex: none;
+}
+
+.requadre-dreta {
+    max-width: 55%;
+    margin-left: auto;
+    margin-top: -470px;
+}
+
+.imatges-esquerra, .imatge-dreta {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.imatges-esquerra {
+    height: 170px; 
+    margin-bottom: 15px;
+}
+
+.imatge {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    background-color: #444; 
+}
+
+.imatge-dreta {
+    max-width: 100%;
+    height: auto;
+    padding: 25px;
+}
+
+.imatge-dreta .imatge {
+    height: auto; 
+}
+
+.imatge-dreta p {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #f4f4f4;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-footer {
+    text-align: start;
+}
+
+.container-footer1 {
+    text-align: end;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container-footer2 {
+    text-align: end;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container-footer3 {
+    text-align: end;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container-footer4 a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container-footer4 a:hover {
+    text-decoration: underline;
+}
+
+.button-back {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.5s, transform 0.3s;
+    cursor: pointer;
+}
+
+.button-back:hover {
+    background-color: #aaa;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+        padding-top: -80px;
+    }
+
+    .requadre-superior {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -80px;
+    }
+
+    .llista {
+        margin-left: 0;
+    }
+
+    .llista ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .llista ul li {
+        margin: 10px 0;
+    }
+
+    .login {
+        margin-top: 5px;
+    }
+
+    .login a {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding: 5px 10px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .requadre-esquerra, .requadre-dreta {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .requadre-dreta {
+        margin-top: auto;
+    }
+
+    .imatge-dreta {
+        height: auto;
+    }
+
+    .imatge-dreta .imatge {
+        height: auto;
+    }
+
+    .requadre-esquerra {
+        margin-top: 30px;
+    }
+
+    .imatges-esquerra {
+        height: auto;
+    }
+
+    .imatges-esquerra, .imatge {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .requadre-esquerra, .requadre-dreta {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .imatges-esquerra, .imatge-dreta {
+        padding: 10px;
+    }
+
+    .imatge {
+        height: auto;
+    }
+
+    .imatge-dreta .imatge {
+        height: auto;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .button-back {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
+

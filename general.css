@@ -1,0 +1,570 @@
+/* Al final d'aquest arxiu hi ha un component Media Queries per fer la pàgina responsive */
+/* Estilos generales */
+* { /* És un selector universal de la pàgina web (més general) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(99, 98, 98);
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav ul li a:hover {
+    background-color: #444;
+    color: white;
+}
+
+.login-button {
+    text-decoration: none;
+    color: white;
+    background-color: #444;
+    transition: background 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    text-decoration: underline;
+    background-color: #aaa;
+}
+
+.main {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: nowrap; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    text-align: justify;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.register-button a {
+    text-decoration: none;
+    margin-inline-start: 330px;
+    margin-inline-end: -50px;
+    padding: 15px 30px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    background: linear-gradient(45deg, #ff6b6b, #f06595); 
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 16px; 
+    font-weight: bold; 
+    display: inline-block;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.register-button a:hover {
+    background: linear-gradient(45deg, #f06595, #ff6b6b); 
+    transform: scale(1.1); 
+    text-decoration: underline;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.right-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.right-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 5px solid #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/*Inici de disseny de carousel de framework*/
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/*Fi de disseny de carousel de framework*/
+
+.ads {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px; 
+    background-color: rgb(253, 244, 238);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ads a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.ads img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.ads:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ads:hover img {
+    transform: scale(1.05);
+}
+
+section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-container, .forums-container, .categories-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.news-item, .forum-item, .category-item {
+    width: 30%;
+    background: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-image, .forum-image, .category-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.category-image img, .forum-image img, .news-image img, .news-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.news-image img {
+    max-width: 85%;
+    height: auto;
+}
+
+.footer {
+    background: #f4f4f4;
+    margin-top: 40px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-footer-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-footer, .container-footer1, .container-footer2, .container-footer3 {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.container-footer h2, .container-footer1 h3, .container-footer2 h3, .container-footer3 h3 {
+    margin-bottom: 10px;
+}
+
+.container-footer ul, .container-footer1 ul, .container-footer2 ul, .container-footer3 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container-footer ul li, .container-footer1 ul li, .container-footer2 ul li, .container-footer3 ul li {
+    margin-bottom: 5px;
+}
+
+.container-footer ul li a, .container-footer1 ul li a, .container-footer2 ul li a, .container-footer3 ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.container-footer ul li a:hover, .container-footer1 ul li a:hover, .container-footer2 ul li a:hover, .container-footer3 ul li a:hover {
+    color: #444;
+}
+
+.container-footer4 {
+    margin-top: 20px;
+}
+
+.container-footer4 a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.container-footer4 a:hover {
+    text-decoration: underline;
+    color: #444;
+}
+
+.button-back {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.5s, transform 0.3s;
+    cursor: pointer;
+}
+
+.button-back:hover {
+    background-color: #aaa;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .ads {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .ads {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .register-button a {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding: 10px 20px;
+    }
+
+    .right-section img {
+        width: 100%;
+    }
+
+    .news-item, .forum-item, .category-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .login-button {
+        margin-top: 10px;
+    }
+
+    .register-button a {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding: 10px 20px;
+    }
+
+    .right-section img {
+        width: 100%;
+    }
+
+    .news-item, .forum-item, .category-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .left-section {
+        padding: 10px;
+    }
+
+    .register-button a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .right-section img {
+        padding: 5px;
+    }
+
+    .ads {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .news-image, .forum-image, .category-image {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .register-button a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .right-section img {
+        padding: 2px;
+    }
+
+    .ads {
+        padding: 5px;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    .news-image, .forum-image, .category-image {
+        padding: 5px;
+    }
+
+    .button-back {
+        padding: 5px 10px;
+    }
+
+    .container-footer {
+        margin: 5px;
+    }
+
+    .container-footer h2, .container-footer1 h3, .container-footer2 h3, .container-footer3 h3 {
+        font-size: 1.5em;
+    }
+
+    .container-footer ul, .container-footer1 ul, .container-footer2 ul, .container-footer3 ul {
+        font-size: 0.8em;
+    }
+
+    .container-footer ul li, .container-footer1 ul li, .container-footer2 ul li, .container-footer3 ul li {
+        font-size: 0.8em;
+    }
+
+    .container-footer4 a {
+        font-size: 0.8em;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .nav ul li {
+        margin: 5px 0;
+    }
+
+    .login-button {
+        padding: 5px 10px;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        padding: 5px;
+    }
+}
